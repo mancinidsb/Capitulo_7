@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataTempo.Entities;
+using System;
 
 namespace DataTempo
 {
@@ -10,6 +11,9 @@ namespace DataTempo
             DateTime data = DateTime.Now;
             Console.WriteLine(data);
             //-=-=-=-=-=-=-=-=--=-=-=
+
+            Cliente cliente = new("Caio", 20);
+            Console.WriteLine($"\n{cliente}");
         }
     }
 }
